@@ -1,49 +1,272 @@
-body {
+* {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Montserrat", sans-serif, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+*::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
 }
 
-.App {
+*::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+}
+
+body {
+    transition: all 0.5s ease-in-out;
+    scrollbar-width: thin;
+    background-color: #F4F4F2;
+}
+
+
+/* --------- Header Component --------- */
+
+.navbar {
+    z-index: 1;
+    background-color: #fff;
+    z-index: 15;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #fa582d;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fa582d;
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+.navbar button.navbar-toggler {
+    border: none;
+}
+
+.navbar button.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.pageContainer {
+    margin-top: 80px;
+}
+
+.flex-box-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* --------- Section Heading Component --------- */
+
+.sectionHeading {
+    width: 100%;
+}
+
+.sectionHeading .topline {
+    position: relative;
+    padding: 10px 0 10px 0;
+}
+
+.sectionHeading .topline:before {
+    background-color: #fa582d;
+    width: 50px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.sectionHeading .heading {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 28px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+/* --------- Custom Button Component --------- */
+
+.customBtn {
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 7px 20px;
+    letter-spacing: 0px;
+    color: #000;
+    background-color: #fa582d;
+    border: 2px solid #fa582d;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    box-shadow: 0 !important;
+}
+
+.customBtn:hover {
+    background-color: rgba(250, 88, 45, 0.95);
+}
+
+
+/* --------- Banner Component --------- */
+
+.bannerArea {
+    background-image: url('../img//hero-banner.jpeg');
+    height: 610px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.bannerArea .bannerText {
+    width: 60%;
+    min-width: 400px;
+    padding: 0 1rem;
+}
+
+.bannerArea .title {
+    font-size: 2.5em;
+    line-height: 4rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.bannerArea .subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 33px;
+    margin-bottom: 5rem;
+}
+
+
+/* --------- Introduction Component --------- */
+
+.introductionArea {
+    padding: 100px 0 20px 0;
+}
+
+.introductionArea .introductionBox {
+    padding: 20px 0;
+}
+
+.introductionArea .title {
+    font-weight: 600;
+    font-size: 1.75em;
+    line-height: 50px;
+    color: #333;
+}
+
+.introductionArea .description {
+    font-size: 1em;
+    padding: 10px 0;
+    color: #333;
+}
+
+
+/* --------- FAQ Component --------- */
+
+.faqBox {
+    padding-bottom: 20px;
+}
+
+.faqBox .title {
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 50px;
+    color: #333;
+}
+
+.faqBox .description {
+    font-size: 1.0em;
+    padding: 10px 0;
+    color: #333;
+}
+
+
+/* --------- Footer --------- */
+
+footer {
+    background: #fff;
+    width: 100%;
+    padding: 42px;
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+footer a {
+    color: #333;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+footer a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+/* ------- Responsiveness ------- */
+
+@media (max-width: 576px) {
+    .introductionArea .title {
+        font-size: 1.5rem;
+    }
+    .faqArea .title {
+        font-size: 1.4rem;
+    }
+    .bannerArea .title {
+        font-size: 2.25em;
+    }
+    .bannerArea .subtext {
+        font-size: 1.25rem;
     }
 }
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
     }
-    to {
-        transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 920px;
+    }
+    .bannerArea .title {
+        font-size: 3em;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .bannerArea .title {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar .navbar-nav .nav-link {
+        padding-right: 3rem !important;
+    }
+    .container {
+        max-width: 1200px;
     }
 }
