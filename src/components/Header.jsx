@@ -9,7 +9,7 @@ function Header() {
             <Container>
                 <Navbar.Brand href="#">
                     <span class="logo">
-                        <img src={logo} alt="Web Logo" style={{width: '300px', paddingLeft: '0px'}} />
+                        <img src={logo} alt="Web Logo"/>
                     </span>
                 </Navbar.Brand>
                 

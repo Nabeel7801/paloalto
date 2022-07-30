@@ -36,6 +36,11 @@ body {
     border-bottom: 1px solid #fa582d;
 }
 
+.navbar .logo img {
+    width: 300px;
+    padding-left: 0;
+}
+
 .navbar .navbar-nav .nav-link {
     font-size: 0.8rem;
     font-weight: 600;
@@ -227,13 +232,16 @@ footer a:hover {
         font-size: 1.5rem;
     }
     .faqArea .title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .bannerArea .title {
         font-size: 2.25em;
     }
     .bannerArea .subtext {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+    }
+    .navbar .logo img {
+        width: 200px;
     }
 }
 
