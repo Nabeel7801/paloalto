@@ -1,14 +1,14 @@
-# vtf-speaker
-This project is developed for VTF Speakers Portal
+# VTF Speaker Portal
+This project is developed for VTF Speakers
 
 # To Run this Project
  1) Clone the Repository
  
- # For Backend
+ # Backend
  2) Install Node Module (npm install)
  3) And then Start the Backend (nodemon server)
 
- # For Frontend
+ # Frontend
  4) Navigate to client directory (cd client)
  5) Install Node Module (npm install)
  6) And then Start the Frontend (npm start)
