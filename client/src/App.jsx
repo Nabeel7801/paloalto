@@ -1,24 +1,24 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './pages/Home'
 import CallForPapers from './pages/CallForPapers'
 
 function App() {
     return (
-        <BrowserRouter>
+        <Router>
             
-            <Routes>
+            <Switch>
 
                 {/* --------------- Home Page --------------- */}
-                <Route path="/" element={<Home />} />
+                <Route path="/" exact component={() => <Home />} />
 
                 {/* --------------- Call For Papers --------------- */}
-                <Route path="/callForPapers" element={<CallForPapers />} />
+                <Route path="/callforpapers" exact component={() => <CallForPapers />} />
 
-            </Routes>
+            </Switch>
 
-        </BrowserRouter>
+        </Router>
     );
 }
 

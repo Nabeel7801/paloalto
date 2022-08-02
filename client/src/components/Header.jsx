@@ -20,7 +20,7 @@ function Header() {
 
                     <Nav className="justify-content-end flex-grow-1">
                         <Nav.Link href="#Introduction">Introduction</Nav.Link>
-                        <Nav.Link href="/callForPapers">Call for Papers</Nav.Link>
+                        <Nav.Link href="/callforpapers">Call for Papers</Nav.Link>
                         <Nav.Link href="#FAQ">FAQ</Nav.Link>
                         <Nav.Link href="#">Stay Updated</Nav.Link>
                     </Nav>
