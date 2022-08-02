@@ -10,6 +10,7 @@ function Header() {
                 <Navbar.Brand href="#">
                     <span class="logo">
                         <img src={logo} alt="Web Logo"/>
+                        <span>Virtually Testing Foundation</span>
                     </span>
                 </Navbar.Brand>
                 
@@ -19,7 +20,7 @@ function Header() {
 
                     <Nav className="justify-content-end flex-grow-1">
                         <Nav.Link href="#Introduction">Introduction</Nav.Link>
-                        <Nav.Link href="#">Call for Paper</Nav.Link>
+                        <Nav.Link href="/callForPapers">Call for Papers</Nav.Link>
                         <Nav.Link href="#FAQ">FAQ</Nav.Link>
                         <Nav.Link href="#">Stay Updated</Nav.Link>
                     </Nav>

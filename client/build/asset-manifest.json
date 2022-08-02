@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/paloalto/static/css/main.e6955539.css",
+    "main.js": "/paloalto/static/js/main.efbb9b7d.js",
+    "static/media/hero-banner.jpeg": "/paloalto/static/media/hero-banner.2eda185917b2bd21cbfa.jpeg",
+    "index.html": "/paloalto/index.html",
+    "main.e6955539.css.map": "/paloalto/static/css/main.e6955539.css.map",
+    "main.efbb9b7d.js.map": "/paloalto/static/js/main.efbb9b7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6955539.css",
+    "static/js/main.efbb9b7d.js"
+  ]
+}

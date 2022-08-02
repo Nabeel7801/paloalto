@@ -12,7 +12,7 @@ function Banner() {
                     <div className="title">Save the Date</div>
                     <div className="subtext">
                         Get ready for the world’s premier cybersecurity event. 
-                        <br />December 12–15, 2022
+                        <br /><strong>December 12–15, 2022</strong>
                     </div>
                     
                     <Button text="Get Updates"/>
