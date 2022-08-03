@@ -72,6 +72,7 @@ body {
 
 .pageContainer {
     margin-top: 80px;
+    padding: 10px 0;
 }
 
 .flex-box-section {
@@ -197,6 +198,11 @@ body {
     color: #333;
 }
 
+.buttonArea {
+    display: flex;
+    justify-content: center;
+}
+
 .introductionArea .buttonArea {
     display: flex;
     justify-content: center;
@@ -221,9 +227,10 @@ body {
     color: #333;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
+
 
 /* --------- Footer --------- */
 
