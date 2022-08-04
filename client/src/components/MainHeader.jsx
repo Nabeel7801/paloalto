@@ -22,7 +22,7 @@ function MainHeader() {
                         <Nav.Link href="#">Home</Nav.Link>
                         <Nav.Link href="#">VTF Speakers</Nav.Link>
                         <Nav.Link href="#">Submission Guideline</Nav.Link>
-                        <Nav.Link href="#">Track & Use Cases</Nav.Link>
+                        <Nav.Link href="/trackusecases">Track & Use Cases</Nav.Link>
                         <Nav.Link href="#">Program Policies</Nav.Link>
                         <Nav.Link href="#">FAQ</Nav.Link>
                         <Nav.Link href="#">Contact Us</Nav.Link>

@@ -231,6 +231,31 @@ body {
     text-align: center;
 }
 
+/* --------- TrackBox Component --------- */
+
+.TrackBox {
+    padding-bottom: 20px;
+}
+
+.TrackBox .title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #5f5f5f;
+}
+
+.TrackBox .description {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #5f5f5f;
+}
+
+/* --------- Accordion Item --------- */
+.item {
+    border-bottom: 1px solid #4288C8;
+}
+
+
 
 /* --------- Footer --------- */
 
