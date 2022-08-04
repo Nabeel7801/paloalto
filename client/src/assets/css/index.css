@@ -70,6 +70,13 @@ body {
     box-shadow: none;
 }
 
+.navbar .loginBtn {
+    color: #fff;
+    background-color: #4288C8;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
 .pageContainer {
     margin-top: 80px;
     padding: 10px 0;
@@ -79,7 +86,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 40px 10px;
 }
 
 
@@ -178,7 +185,7 @@ body {
 /* --------- Introduction Component --------- */
 
 .introductionArea {
-    padding: 100px 0 20px 0;
+    padding: 60px 0 20px 0;
 }
 
 .introductionArea .introductionBox {
@@ -229,6 +236,38 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+
+/* --------- Login Page --------- */
+
+.loginArea {
+    margin-top: 80px;
+    padding: 20px;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.loginCard input,
+.loginCard label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 5px 2px rgba(66, 136, 200, 0.5);
+    border: none;
 }
 
 
@@ -313,11 +352,17 @@ footer a:hover {
     .introductionArea .buttonArea {
         justify-content: flex-start;
     }
+    .loginCard {
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
 }
 
 @media (min-width: 1200px) {
     .navbar .navbar-nav .nav-link {
-        padding-right: 3rem !important;
+        padding-right: 2rem !important;
     }
     .container {
         max-width: 1200px;

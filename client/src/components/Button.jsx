@@ -1,8 +1,11 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 function Button(props) {
+    const history = useHistory();
+    
     return (
-        <button className="customBtn">
+        <button className="customBtn" onClick={() => history.push(props.href)}>
             {props.text} &nbsp; 
             <strong>
                 <svg width="16" height="12" viewBox="0 0 18 13" fill="none">
