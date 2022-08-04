@@ -174,7 +174,7 @@ function TrackUseCases() {
           </div>
 
           <div className="buttonArea">
-            <Button text="Submit for Proposal"/>
+            <Button text="Submit for Proposal" href="/callforpapers"/>
           </div>
         </div>
       <Footer />

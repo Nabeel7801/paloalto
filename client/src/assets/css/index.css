@@ -263,9 +263,9 @@
         display: flex;
         justify-content: center;
         background-color: #fff;
-        width: 98%;
+        width: 100%;
         margin: auto;
-        padding: 20px 0px;
+        padding: 20px 5px;
         border-radius: 20px;
     }
     
