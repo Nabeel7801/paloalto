@@ -29,7 +29,7 @@ function Participant() {
                 </div>
 
             </div>
-
+            <Footer />
         </React.Fragment>
     )
   

@@ -19,7 +19,7 @@ function Contact() {
                 </div>
 
             </div>
-
+            <Footer/>
         </React.Fragment>
     )
 }

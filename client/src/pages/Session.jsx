@@ -28,7 +28,7 @@ function Session() {
                 </div>
 
             </div>
-
+            <Footer />
         </React.Fragment>
     )
   

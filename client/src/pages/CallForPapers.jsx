@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header';
+import MainHeader from '../components/MainHeader';
 import Footer from '../components/Footer';
 
 import SectionHeading from '../components/SectionHeading';
@@ -8,7 +8,7 @@ import Button from '../components/Button';
 function CallForPapers() {
     return (
         <React.Fragment>
-            <Header />
+            <MainHeader />
 
             <div className="pageContainer">
 

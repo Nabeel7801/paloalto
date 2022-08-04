@@ -49,11 +49,11 @@ function App() {
                     {/* --------------- Contact Page --------------- */}
                     <Route path="/contact" exact component={() => <Contact />} />
 
-                 {/* --------------- Track and Use Cases --------------- */}
-                 <Route path="/trackusecases" exact component={() => <TrackUseCases />} />
+                    {/* --------------- Track and Use Cases --------------- */}
+                    <Route path="/trackusecases" exact component={() => <TrackUseCases />} />
 
 
-            </Switch>
+                </Switch>
 
             </Router>
         </AppContext.Provider>

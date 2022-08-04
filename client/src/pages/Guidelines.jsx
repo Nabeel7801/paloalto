@@ -19,7 +19,7 @@ function Guidelines() {
                 </div>
 
             </div>
-
+            <Footer />
         </React.Fragment>
     )
 }
