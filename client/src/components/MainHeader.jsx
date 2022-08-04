@@ -19,7 +19,7 @@ function MainHeader() {
                 <Navbar.Collapse>
 
                     <Nav className="justify-content-end flex-grow-1">
-                        <Nav.Link href="#">Home</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="#">VTF Speakers</Nav.Link>
                         <Nav.Link href="#">Submission Guideline</Nav.Link>
                         <Nav.Link href="/trackusecases">Track & Use Cases</Nav.Link>
