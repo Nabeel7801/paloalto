@@ -7,7 +7,7 @@ function IntroductionBox(props) {
             <div className="title">{props.title}</div>
             <div className="description">{props.description}</div>
             <div className="buttonArea">
-                <Button text="Submit for Proposal" href={props.href}/>
+                <Button text={props.text} href={props.href}/>
             </div>
 
         </div>

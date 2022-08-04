@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-
-import SectionHeading from '../components/SectionHeading';
+import UnderDevelopment from '../components/UnderDevelopment';
 
 function Contact() {
     return (
@@ -12,14 +10,9 @@ function Contact() {
 
             <div className="pageContainer">
 
-                <div className="flex-box-section">
-                    
-                    <SectionHeading title="Stay Updated"/>
-                    
-                </div>
+                <UnderDevelopment webpage="Stay Updated" />
 
             </div>
-            <Footer/>
         </React.Fragment>
     )
 }
