@@ -1,18 +1,16 @@
 import React from 'react'
-import MainHeader from '../components/MainHeader';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Accordion from 'react-bootstrap/Accordion';
 
 import SectionHeading from '../components/SectionHeading';
-import TrackBox from '../components/TrackBox'
-import BigHeadBox from '../components/BigHeadBox';
 import Button from '../components/Button';
 
 
 function TrackUseCases() {
   return (
     <React.Fragment>
-      <MainHeader />
+      <Header />
         <div className="pageContainer">
           <div className="TrackArea">
             <div className="flex-box-section">
@@ -20,10 +18,8 @@ function TrackUseCases() {
               <br />
               <SectionHeading title="Track & Use Cases"/>
 
-              <TrackBox 
-                title="Tracks & Solution Themes:"
-                description="Your session proposal needs to fall under one of the following tracks and themes."
-              />
+              <div className="title">Tracks & Solution Themes:</div>
+              <div className="description">Your session proposal needs to fall under one of the following tracks and themes.</div>
 
               <div className="mb-5">
                 <Accordion defaultActiveKey={['0']} alwaysOpen>
@@ -90,9 +86,9 @@ function TrackUseCases() {
                 </Accordion>
               </div>
               <div>
-                <BigHeadBox
-                  title="Tips for Crafting Your Proposal"
-                />
+              
+                <strong><div className="title" style={{fontSize: "2rem"}}>Tips for Crafting Your Proposal</div></strong>
+                
                 <p style={{color:"#5f5f5f",fontSize:"1rem"}}>Session Title and Session Description</p>
                 <ul>
                   <li>If your proposal is selected, your Session Title and Session Description will be published in 

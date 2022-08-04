@@ -1,395 +1,385 @@
-* {
-    margin: 0;
-    font-family: "Montserrat", sans-serif, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-*::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #eee;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 20px;
-}
-
-:root {
-    --themeColor: #4288C8;
-}
-
-body {
-    transition: all 0.5s ease-in-out;
-    scrollbar-width: thin;
-    background-color: #F4F4F2;
-    overflow-x: hidden;
-}
-
-
-/* --------- Header Component --------- */
-
-.navbar {
-    z-index: 1;
-    background-color: #fff;
-    z-index: 15;
-    padding: 0.9rem 0;
-    box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.1);
-    min-height: 80px;
-    max-width: 100vw;
-}
-
-.navbar .logo img {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px 0 0;
-}
-
-.navbar .logo span {
-    color: var(--themeColor);
-    font-weight: bold;
-}
-
-.navbar .navbar-nav .nav-link {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--themeColor);
-    text-transform: uppercase;
-    padding-right: 1rem;
-}
-
-.navbar button.navbar-toggler {
-    border: none;
-}
-
-.navbar button.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.navbar .loginBtn {
-    color: #fff;
-    background-color: #4288C8;
-    border-radius: 15px;
-    padding: 10px 20px;
-}
-
-.pageContainer {
-    margin-top: 80px;
-    padding: 10px 0;
-}
-
-.flex-box-section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 10px;
-}
-
-
-/* --------- Section Heading Component --------- */
-
-.sectionHeading {
-    width: 100%;
-}
-
-.sectionHeading .topline {
-    position: relative;
-    padding: 10px 0 10px 0;
-}
-
-.sectionHeading .topline:before {
-    background-color: var(--themeColor);
-    width: 50px;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-
-.sectionHeading .heading {
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 28px;
-    color: #000;
-    text-transform: uppercase;
-}
-
-
-/* --------- Custom Button Component --------- */
-
-.customBtn {
-    font-size: 0.8rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    line-height: 26px;
-    padding: 7px 20px;
-    letter-spacing: 0px;
-    color: #000;
-    background-color: var(--themeColor);
-    border: 2px solid var(--themeColor);
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    box-shadow: 0 !important;
-}
-
-.customBtn:hover {
-    background-color: rgb(66, 136, 200, 0.95);
-}
-
-
-/* --------- Banner Component --------- */
-
-.bannerArea {
-    background-image: url('../img/background.jpg');
-    height: 610px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.bannerArea .bannerText {
-    width: 60%;
-    min-width: 360px;
-    padding: 0 1rem;
-}
-
-.bannerArea .title {
-    font-size: 2.5em;
-    line-height: 4rem;
-    color: #fff;
-    font-weight: 600;
-    padding: 5px 0;
-}
-
-.bannerArea .subtext {
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #fff;
-    line-height: 33px;
-    margin-bottom: 5rem;
-}
-
-
-/* --------- Introduction Component --------- */
-
-.introductionArea {
-    padding: 60px 0 20px 0;
-}
-
-.introductionArea .introductionBox {
-    padding: 20px 0;
-}
-
-.introductionArea .title {
-    font-weight: 600;
-    font-size: 1.75em;
-    line-height: 50px;
-    color: #333;
-}
-
-.introductionArea .description {
-    font-size: 1em;
-    padding: 10px 0;
-    color: #333;
-}
-
-.buttonArea {
-    display: flex;
-    justify-content: center;
-}
-
-.introductionArea .buttonArea {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* --------- FAQ Component --------- */
-
-.faqBox {
-    padding-bottom: 20px;
-}
-
-.faqBox .title {
-    font-weight: 600;
-    font-size: 1.5em;
-    color: #333;
-}
-
-.faqBox .description {
-    font-size: 1.0em;
-    padding: 10px 0;
-    color: #333;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* --------- TrackBox Component --------- */
-
-.TrackBox {
-    padding-bottom: 20px;
-}
-
-.TrackBox .title {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #5f5f5f;
-}
-
-.TrackBox .description {
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 10px 0;
-    color: #5f5f5f;
-}
-
-/* --------- Accordion Item --------- */
-.item {
-    border-bottom: 1px solid #4288C8;
-}
-
-
-
-/* --------- Login Page --------- */
-
-.loginArea {
-    margin-top: 80px;
-    padding: 20px;
-    height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loginCard {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    width: 90%;
-    margin: auto;
-    padding: 20px 10px;
-    border-radius: 20px;
-}
-
-.loginCard input,
-.loginCard label {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.form-control:focus {
-    box-shadow: 0px 0px 5px 2px rgba(66, 136, 200, 0.5);
-    border: none;
-}
-
-
-/* --------- Footer --------- */
-
-footer {
-    background: #fff;
-    width: 100%;
-    padding: 42px;
-    text-align: center;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-
-/* ------- Responsiveness ------- */
-
-@media (max-width: 576px) {
-    .introductionArea .title {
-        font-size: 1.5em;
+    * {
+        margin: 0;
+        font-family: "Montserrat", sans-serif, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
-    .faqBox .title {
-        font-weight: bold;
-        font-size: 1.1em;
+    
+    *::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
     }
-    .bannerArea .title {
-        font-size: 2.25em;
+    
+    *::-webkit-scrollbar-track {
+        background: #eee;
     }
-    .bannerArea .subtext {
-        font-size: 1.1rem;
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 20px;
     }
-    .introductionArea .buttonArea {
-        padding-top: 10px;
-        justify-content: flex-end;
+    
+     :root {
+        --themeColor: #4288C8;
     }
+    
+    body {
+        transition: all 0.5s ease-in-out;
+        scrollbar-width: thin;
+        background-color: #F4F4F2;
+        overflow-x: hidden;
+    }
+    /* --------- Header Component --------- */
+    
+    .navbar {
+        z-index: 1;
+        background-color: #fff;
+        z-index: 15;
+        padding: 0.9rem 0;
+        box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.1);
+        min-height: 80px;
+        max-width: 100vw;
+    }
+    
     .navbar .logo img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px 0 0;
     }
+    
     .navbar .logo span {
-        font-size: 0.85em;
+        color: var(--themeColor);
+        font-weight: bold;
     }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
+    
+    .navbar .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--themeColor);
+        text-transform: uppercase;
+        padding-right: 1rem;
     }
-    .faqBox .title {
-        font-size: 1.2em;
+    
+    .navbar button.navbar-toggler {
+        border: none;
     }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 920px;
+    
+    .navbar button.navbar-toggler:focus {
+        box-shadow: none;
     }
-    .bannerArea .title {
-        font-size: 3em;
+    
+    .navbar .loginBtn {
+        color: #fff;
+        background-color: #4288C8;
+        border-radius: 15px;
+        padding: 10px 20px;
+    }
+    
+    .pageContainer {
+        margin-top: 80px;
         padding: 10px 0;
     }
-    .bannerArea .subtext {
-        font-size: 1.3em;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-    .bannerArea .title {
-        font-size: 3em;
-    }
-    .introductionArea .buttonArea {
-        justify-content: flex-start;
-    }
-    .loginCard {
-        background-color: transparent;
+    
+    .flex-box-section {
         width: 100%;
-        padding: 0;
-        border-radius: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar .navbar-nav .nav-link {
-        padding-right: 2rem !important;
-    }
-    .container {
         max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 10px;
     }
-}
+    /* --------- Section Heading Component --------- */
+    
+    .sectionHeading {
+        width: 100%;
+    }
+    
+    .sectionHeading .topline {
+        position: relative;
+        padding: 10px 0 10px 0;
+    }
+    
+    .sectionHeading .topline:before {
+        background-color: var(--themeColor);
+        width: 50px;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 8px;
+    }
+    
+    .sectionHeading .heading {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 28px;
+        color: #000;
+        text-transform: uppercase;
+    }
+    /* --------- Custom Button Component --------- */
+    
+    .customBtn {
+        font-size: 0.8rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        line-height: 26px;
+        padding: 7px 20px;
+        letter-spacing: 0px;
+        color: #000;
+        background-color: var(--themeColor);
+        border: 2px solid var(--themeColor);
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        box-shadow: 0 !important;
+    }
+    
+    .customBtn:hover {
+        background-color: rgb(66, 136, 200, 0.95);
+    }
+    /* --------- Banner Component --------- */
+    
+    .bannerArea {
+        background-image: url('../img/background.jpg');
+        height: 610px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    
+    .bannerArea .bannerText {
+        width: 60%;
+        min-width: 360px;
+        padding: 0 1rem;
+    }
+    
+    .bannerArea .title {
+        font-size: 2.5em;
+        line-height: 4rem;
+        color: #fff;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+    
+    .bannerArea .subtext {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #fff;
+        line-height: 33px;
+        margin-bottom: 5rem;
+    }
+    /* --------- Introduction Component --------- */
+    
+    .introductionArea {
+        padding: 60px 0 20px 0;
+    }
+    
+    .introductionArea .introductionBox {
+        padding: 20px 0;
+    }
+    
+    .introductionArea .title {
+        font-weight: 600;
+        font-size: 1.75em;
+        line-height: 50px;
+        color: #333;
+    }
+    
+    .introductionArea .description {
+        font-size: 1em;
+        padding: 10px 0;
+        color: #333;
+    }
+    
+    .buttonArea {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .introductionArea .buttonArea {
+        display: flex;
+        justify-content: center;
+    }
+    /* --------- FAQ Component --------- */
+    
+    .faqBox {
+        padding-bottom: 20px;
+    }
+    
+    .faqBox .title {
+        font-weight: 600;
+        font-size: 1.5em;
+        color: #333;
+    }
+    
+    .faqBox .description {
+        font-size: 1.0em;
+        padding: 10px 0;
+        color: #333;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    /* --------- TrackBox Component --------- */
+    
+    .TrackBox {
+        padding-bottom: 20px;
+    }
+    
+    .TrackBox .title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #5f5f5f;
+    }
+    
+    .TrackBox .description {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 10px 0;
+        color: #5f5f5f;
+    }
+    /* --------- Accordion Item --------- */
+    
+    .item {
+        border-bottom: 1px solid #4288C8;
+    }
+    /* --------- Login Page --------- */
+    
+    .loginArea {
+        margin-top: 80px;
+        padding: 20px;
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .loginCard {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 98%;
+        margin: auto;
+        padding: 20px 0px;
+        border-radius: 20px;
+    }
+    
+    .loginCard input,
+    .loginCard label {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .form-control:focus {
+        box-shadow: 0px 0px 5px 2px rgba(66, 136, 200, 0.5);
+        border: none;
+    }
+    /* --------- Footer --------- */
+    
+    footer {
+        background: #fff;
+        width: 100%;
+        padding: 42px;
+        text-align: center;
+    }
+    
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+    /* ------- Responsiveness ------- */
+    
+    @media (max-width: 576px) {
+        .introductionArea .title {
+            font-size: 1.5em;
+        }
+        .faqBox .title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .bannerArea .title {
+            font-size: 2.25em;
+        }
+        .bannerArea .subtext {
+            font-size: 1.1rem;
+        }
+        .introductionArea .buttonArea {
+            padding-top: 10px;
+            justify-content: flex-end;
+        }
+        .navbar .logo img {
+            width: 40px;
+            height: 40px;
+        }
+        .navbar .logo span {
+            font-size: 0.85em;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+        .faqBox .title {
+            font-size: 1.2em;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 920px;
+        }
+        .bannerArea .title {
+            font-size: 3em;
+            padding: 10px 0;
+        }
+        .bannerArea .subtext {
+            font-size: 1.3em;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+        .bannerArea .title {
+            font-size: 3em;
+        }
+        .introductionArea .buttonArea {
+            justify-content: flex-start;
+        }
+        .loginCard {
+            background-color: transparent;
+            width: 100%;
+            padding: 0;
+            border-radius: 0;
+        }
+        .navbar .logo span {
+            font-size: 0.8em;
+        }
+        .container {
+            max-width: 992px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .navbar .navbar-nav .nav-link {
+            padding-right: 1.5rem !important;
+            white-space: nowrap;
+        }
+        .navbar .logo span {
+            font-size: 0.85em;
+        }
+        .container {
+            max-width: 1200px;
+        }
+    }

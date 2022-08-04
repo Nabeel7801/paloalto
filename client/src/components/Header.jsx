@@ -23,7 +23,7 @@ function Header() {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/callforpapers">Call for Papers</Nav.Link>
                         <Nav.Link href="/guidelines">Guidelines</Nav.Link>
-                        <Nav.Link href="/#FAQ">FAQ</Nav.Link>
+                        <Nav.Link href="/trackusecases">Use Cases</Nav.Link>
                         <Nav.Link href="/contact">Stay Updated</Nav.Link>
                         <Nav.Link href="#"><LoginButton /></Nav.Link>
                     </Nav>
