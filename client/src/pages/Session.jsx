@@ -1,8 +1,6 @@
 import React, { useEffect} from 'react'
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-
-import SectionHeading from '../components/SectionHeading';
+import UnderDevelopment from '../components/UnderDevelopment';
 
 function Session() {
 
@@ -20,15 +18,10 @@ function Session() {
             <Header />
 
             <div className="pageContainer">
-
-                <div className="flex-box-section">
-                    
-                    <SectionHeading title="Session Form"/>
-                    
-                </div>
+                
+                <UnderDevelopment webpage="Sessions Form" />
 
             </div>
-            <Footer />
         </React.Fragment>
     )
   

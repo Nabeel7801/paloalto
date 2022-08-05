@@ -1,8 +1,6 @@
 import React, { useEffect} from 'react'
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-
-import SectionHeading from '../components/SectionHeading';
+import UnderDevelopment from '../components/UnderDevelopment';
 
 function Participant() {
 
@@ -21,15 +19,10 @@ function Participant() {
             <Header />
 
             <div className="pageContainer">
-
-                <div className="flex-box-section">
-                    
-                    <SectionHeading title="Participant Form"/>
-                    
-                </div>
+                
+                <UnderDevelopment webpage="Participants Form" />
 
             </div>
-            <Footer />
         </React.Fragment>
     )
   

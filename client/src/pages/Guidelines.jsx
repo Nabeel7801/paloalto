@@ -1,8 +1,7 @@
 import React from 'react'
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
-import SectionHeading from '../components/SectionHeading';
+import UnderDevelopment from '../components/UnderDevelopment';
 
 function Guidelines() {
     return (
@@ -12,14 +11,9 @@ function Guidelines() {
 
             <div className="pageContainer">
 
-                <div className="flex-box-section">
-                    
-                    <SectionHeading title="Submission Guidelines"/>
-                    
-                </div>
+                <UnderDevelopment webpage="Guidelines" />
 
             </div>
-            <Footer />
         </React.Fragment>
     )
 }
