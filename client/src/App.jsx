@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Contact from './pages/Contact';
 import Participant from './pages/Participant';
 import Session from './pages/Session';
+import Signup from './pages/Signup'
 
 function App() {
 
@@ -50,8 +51,11 @@ function App() {
                     {/* --------------- Contact Page --------------- */}
                     <Route path="/contact" exact component={() => <Contact />} />
 
-                    {/* --------------- Track and Use Cases --------------- */}
+                    {/* --------------- Track and Use Cases Page --------------- */}
                     <Route path="/trackusecases" exact component={() => <TrackUseCases />} />
+
+                    {/* --------------- Signup Page --------------- */}
+                    <Route path="/signup" exact component={() => <Signup />} />
 
 
                 </Switch>
