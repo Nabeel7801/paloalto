@@ -4,6 +4,32 @@ import Header from "../components/Header";
 
 function Session() {
 
+    const tracks = [
+        { 
+            title: "Cloud Delivered Security Services (CDSS)",
+            usecases: [
+                "Cloud Access Security Broker",
+                "Data Loss Prevention",
+                "DNS Security",
+                "Extending Network Security to the Cloud",
+                "Internet/Web Security",
+                "Intrusion Prevention (IPS/IDS)",
+                "Malware Analysis & Sandboxing",
+                "Ransomware Protection",
+                "Securing SaaS Applications",
+                "Unmanaged (IOT) Device Security and Segmentation"
+            ]
+        },
+        { 
+            title: "Cloud Native Application Protection (Prisma Cloud)",
+            usecases: [
+                "Cloud Code Security (Infrastructure as Code Security) ",
+                
+            ]
+        },
+        
+    ]
+
     useEffect(() => {
         
         const user = localStorage.getItem('user');
@@ -104,16 +130,7 @@ function Session() {
 
                         <FloatingLabel label="Session Tracks" className="mb-3">
                             <Form.Select aria-label="Session Tracks" required>
-                                <option value="Cloud Delivered Security Services (CDSS)">Cloud Delivered Security Services (CDSS)</option>
-                                <option value="Cloud Native Application Protection (Prisma Cloud)">Cloud Native Application Protection (Prisma Cloud)</option>
-                                <option value="Endpoint Security  (Cortex XDR)">Endpoint Security  (Cortex XDR)</option>
-                                <option value="Industry Solutions">Industry Solutions </option>
-                                <option value="Network Security (Next-Gen Firewall)">Network Security (Next-Gen Firewall)</option>
-                                <option value="Partner Showcase">Partner Showcase</option>
-                                <option value="Secure Access Service Edge (SASE)">Secure Access Service Edge (SASE)</option>
-                                <option value="Security Operations (Cortex)">Security Operations (Cortex)</option>
-                                <option value="Simplifying Security (Cross Portfolio)">Simplifying Security (Cross Portfolio) </option>
-                                <option value="Threat Intel & Incident Response Services (Unit 42)">Threat Intel & Incident Response Services (Unit 42)</option>
+                                {tracks.map(track => <option value={track.title}>{track.title}</option>)}
                             </Form.Select>
                         </FloatingLabel>
 
