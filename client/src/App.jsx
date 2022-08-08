@@ -11,7 +11,6 @@ import Register from './pages/Register';
 import StayUpdated from './pages/StayUpdated';
 import Participant from './pages/Participant';
 import Session from './pages/Session';
-import Signup from './pages/Signup'
 
 function App() {
 
@@ -53,9 +52,6 @@ function App() {
 
                     {/* --------------- Track and Use Cases Page --------------- */}
                     <Route path="/trackusecases" exact component={() => <TrackUseCases />} />
-
-                    {/* --------------- Signup Page --------------- */}
-                    <Route path="/signup" exact component={() => <Signup />} />
 
 
                 </Switch>

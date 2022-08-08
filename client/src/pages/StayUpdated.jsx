@@ -1,7 +1,6 @@
 import React from 'react'
-import { Form, FloatingLabel, Card } from "react-bootstrap";
+import { Form, FloatingLabel } from "react-bootstrap";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 import Button from "../components/Button";
 

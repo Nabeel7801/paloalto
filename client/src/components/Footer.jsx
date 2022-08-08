@@ -6,11 +6,11 @@ function Footer() {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="footer-text">© 2022&nbsp;<a href="/">Palo Alto Networks,
-                            </a> Inc. All Rights Reserved. <br />
-                            <a href="/">Privacy</a>&nbsp;|&nbsp;
-                            <a href="/">Terms of Use</a>&nbsp;|&nbsp;
-                            <a href="/">Contact Us</a>
+                        <div class="footer-text">© 2022&nbsp;All Rights Reserved - 
+                            &nbsp;<a href="/">Virtually Testing Foundation</a><br />
+                            <a href="#">Privacy</a>&nbsp;|&nbsp;
+                            <a href="#">Terms of Use</a>&nbsp;|&nbsp;
+                            <a href="/contact">Contact Us</a>
                         </div>
                     </div>
                 </div>
