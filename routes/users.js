@@ -16,6 +16,20 @@ router.get('/authenticateUser/:email/:password', (req, res) => {
         .catch(err => res.status(400).json({ error: err }))
 })
 
+router.get('/getUserByEmail/:email', (req, res) => {
+    Users.find({ Email: req.params.email })
+    .then(users => {
+        const user = {...users[0]}._doc;
+        if (user) {
+            delete user['_id'];
+            delete user['Password'];
+            delete user['Token'];
+        }
+        res.json(user); 
+    })
+    .catch(err => res.status(400).json({ error: err }))
+})
+
 router.get('/getUserCountByEmail/:email', (req, res) => {
 
     Users.find({ Email: req.params.email })
@@ -27,8 +41,8 @@ router.get('/getUserCountByEmail/:email', (req, res) => {
 
 router.post('/registerUser', (req, res) => {
 
-    const { Name, Email, Password } = req.body;
-    const newUser = new Users({ Name: Name, Email: Email, Password: md5(Password), Token: generateToken(Email) });
+    const { FirstName, LastName, Email, Password } = req.body;
+    const newUser = new Users({ FirstName: FirstName, LastName: LastName, Email: Email, Password: md5(Password), Token: generateToken(Email) });
 
     newUser.save()
         .then(() => { res.json({ status: "success" }) })

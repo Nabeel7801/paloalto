@@ -29,7 +29,8 @@ function Register() {
 
             if (userRes.data === 0) {
               const user = {
-                Name: firstName + " " + lastName,
+                FirstName: firstName,
+                LastName: lastName,
                 Email: email,
                 Password: password
               }

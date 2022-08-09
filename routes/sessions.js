@@ -19,4 +19,30 @@ router.post('/createSession', (req, res) => {
 
 })
 
+router.get('/getParticipants/:sessionID', (req, res) => {
+    Sessions.findOne({_id: req.params.sessionID})
+        .then(session => {
+            if (session) {
+                res.json(session.Participants); 
+            } else {
+                res.json({status: 'error'})
+            }
+        })
+        .catch(err => res.status(400).json({ error: err }))
+})
+
+router.put('/addParticipant/:sessionID', (req, res) => {
+    Sessions.findByIdAndUpdate(req.params.sessionID, { $push: { Participants: req.body }})
+        .then(() => res.json({status: 'success'}))
+        .catch(err => res.status(400).json("Error: " + err))
+
+})
+
+router.put('/removeParticipant/:sessionID', (req, res) => {
+    Sessions.findByIdAndUpdate(req.params.sessionID, { Participants: req.body })
+        .then(() => res.json({status: 'success'}))
+        .catch(err => res.status(400).json("Error: " + err))
+
+})
+
 module.exports = router

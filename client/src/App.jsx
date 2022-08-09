@@ -15,8 +15,8 @@ import Session from './pages/Session';
 function App() {
 
     const [appState, setAppState] = useState({
-        ATLAS_URI: "http://localhost:5000"
-        //ATLAS_URI: "https://vtf-speaker.herokuapp.com"
+        //ATLAS_URI: "http://localhost:5000"
+        ATLAS_URI: "https://vtf-speaker.herokuapp.com"
     })
 
     return (

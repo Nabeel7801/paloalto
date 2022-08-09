@@ -330,6 +330,16 @@
         color: #333;
         text-decoration: underline;
     }
+    /* --------- Custom Table --------- */
+    
+    .customTable tr {
+        border: 1px solid #ccc;
+    }
+    
+    .customTable th,
+    .customTable td {
+        border: none;
+    }
     /* ------- Responsiveness ------- */
     
     @media (max-width: 576px) {

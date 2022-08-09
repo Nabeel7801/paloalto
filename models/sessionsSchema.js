@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const sessionsSchema = new mongoose.Schema({
+    Participants: { type: Array, required: false},
     SessionLength: { type: String, required: false },
     SessionType: { type: String, required: false },
     Title: { type: String, required: false },

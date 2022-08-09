@@ -15,6 +15,7 @@ function Session() {
     const history = useHistory()
 
     const [formData, setFormData] = useState({
+        Participants: [],
         SessionLength: "",
         SessionType: "",
         Title: "",
