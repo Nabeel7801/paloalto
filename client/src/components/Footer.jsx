@@ -2,14 +2,14 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="footer-text">© 2022&nbsp;All Rights Reserved - 
+        <footer className="footer">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="footer-text">© 2022&nbsp;All Rights Reserved - 
                             &nbsp;<a href="/">Virtually Testing Foundation</a><br />
-                            <a href="#">Privacy</a>&nbsp;|&nbsp;
-                            <a href="#">Terms of Use</a>&nbsp;|&nbsp;
+                            <a href="/">Privacy</a>&nbsp;|&nbsp;
+                            <a href="/">Terms of Use</a>&nbsp;|&nbsp;
                             <a href="/contact">Contact Us</a>
                         </div>
                     </div>

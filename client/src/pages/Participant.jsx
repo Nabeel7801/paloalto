@@ -4,6 +4,11 @@ import UnderDevelopment from '../components/UnderDevelopment';
 
 function Participant() {
 
+    const sessionID = localStorage.getItem('sessionID');
+    if (!sessionID) {
+        window.location.replace("/callforpapers")
+    }
+
     useEffect(() => {
         
         const user = localStorage.getItem('user');
