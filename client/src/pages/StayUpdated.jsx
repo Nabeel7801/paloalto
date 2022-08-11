@@ -91,12 +91,6 @@ function StayUpdated() {
 
                         <br />
 
-                        <div class="linkNew">
-                            By submitting this form, you agree to our&nbsp;
-                            <a href="#">Terms</a>. View our&nbsp;
-                            <a href="#">Privacy Statement</a>.
-                        </div>
-
                         <div className="buttonArea">
                         <Button text="Submit" href="/callforpapers" />
                         </div>

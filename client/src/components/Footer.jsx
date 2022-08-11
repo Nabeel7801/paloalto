@@ -8,8 +8,6 @@ function Footer() {
                     <div className="col-12">
                         <div className="footer-text">© 2022&nbsp;All Rights Reserved - 
                             &nbsp;<a href="/">Virtually Testing Foundation</a><br />
-                            <a href="/">Privacy</a>&nbsp;|&nbsp;
-                            <a href="/">Terms of Use</a>&nbsp;|&nbsp;
                             <a href="/contact">Contact Us</a>
                         </div>
                     </div>
