@@ -22,7 +22,7 @@ function TrackUseCases() {
               <div className="description">Your session proposal needs to fall under one of the following tracks and themes.</div>
 
               <div className="mb-5">
-                <Accordion defaultActiveKey={['0']} alwaysOpen>
+                <Accordion>
                     <Accordion.Item className="item mb-2" eventKey="0">
                       <Accordion.Header>Track - Cloud Delivered Security Services (CDSS)</Accordion.Header>
                       <Accordion.Body>
