@@ -1,17 +1,16 @@
-import React, { useState }from 'react';
+import React from 'react'
 import { Form, FloatingLabel, Tab, Tabs,
          Card, Row, Col } from "react-bootstrap";
 import Header from "../components/Header";
 import clock from '../assets/img/clock.png'
 
+import SectionHeading from '../components/SectionHeading';
+
 import Button from "../components/Button";
 
 
-function StayUpdated() {
-    const [key, setKey] = useState('home');
-    
+function StayUpdated() {    
     return (
-        
         
         <React.Fragment>
             <Header />
@@ -20,22 +19,21 @@ function StayUpdated() {
                 <div className="container scheduleArea">
 
                     <Tabs
-                    activeKey= {key}
-                    onSelect= {(k) => setKey(k)}
+                    defaultActiveKey= "nov"
                     id="schedule-tab"
-                    className=""
+                    className="myClass"
                     style={{ borderBottom: '4px solid #4288C8', }}
                     fill
                     >
                         <Tab eventKey="nov" title="November" className='card'>
                             <Row>
                                 <Col sm={3}>
-                                    <Card style={{ width: '18.7rem',}}>
+                                    <Card style={{ width: '15.5rem',border: 'none'}}>
                                     <Card.Img  src={ clock } style={{ width: '4rem', margin: '15px' }} />
                                     <Card.Body>
                                         <Card.Title>Fri 7 November, 2022 </Card.Title>
-                                        <Card.Text>
-                                        5pm PST
+                                        <Card.Text style={{}}>
+                                        <strong>5pm PST</strong>
                                         </Card.Text>
                                     </Card.Body>
                                     </Card>
@@ -43,24 +41,102 @@ function StayUpdated() {
 
 
                                 <Col sm={9}>
-                                    <Card>
-                                    <Card.Title>Fri 7 November, 2022 </Card.Title>
-                                    <Card.Text>
-                                    5pm PST
-                                    </Card.Text>
-                                    </Card>
+                                <br />
+                                <div className='container'>
+                                    <SectionHeading className="theme" title="Theme Topic"/>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                        printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+
                                 </Col>
                             </Row>
             
                         </Tab>
-                        <Tab eventKey="dec" title="December">
-                        
+                        <Tab eventKey="dec" title="December" className='card'>
+                            <Row>
+                            <Col sm={3}>
+                                    <Card style={{ width: '15.5rem',border: 'none'}}>
+                                    <Card.Img  src={ clock } style={{ width: '4rem', margin: '15px' }} />
+                                    <Card.Body>
+                                        <Card.Title>Fri 7 December, 2022 </Card.Title>
+                                        <Card.Text style={{}}>
+                                        <strong>5pm PST</strong>
+                                        </Card.Text>
+                                    </Card.Body>
+                                    </Card>
+                                </Col>
+
+
+                                <Col sm={9}>
+                                <br />
+                                <div className='container'>
+                                    <SectionHeading className="theme" title="Theme Topic"/>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                        printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+
+                                </Col>
+                            </Row>
                         </Tab>
-                        <Tab eventKey="jan" title="January">
-                            
+                        <Tab eventKey="jan" title="January" className='card'>
+                        <Row>
+                            <Col sm={3}>
+                                    <Card style={{ width: '15.5rem',border: 'none'}}>
+                                    <Card.Img  src={ clock } style={{ width: '4rem', margin: '15px' }} />
+                                    <Card.Body>
+                                        <Card.Title>Fri 7 January, 2023 </Card.Title>
+                                        <Card.Text style={{}}>
+                                        <strong>5pm PST</strong>
+                                        </Card.Text>
+                                    </Card.Body>
+                                    </Card>
+                                </Col>
+
+
+                                <Col sm={9}>
+                                <br />
+                                <div className='container'>
+                                    <SectionHeading className="theme" title="Theme Topic"/>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                        printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+
+                                </Col>
+                            </Row>
                         </Tab>
-                        <Tab eventKey="feb" title="February">
-                            
+                        <Tab eventKey="feb" title="February" className='card'>
+                        <Row>
+                            <Col sm={3}>
+                                    <Card style={{ width: '15.5rem',border: 'none'}}>
+                                    <Card.Img  src={ clock } style={{ width: '4rem', margin: '15px' }} />
+                                    <Card.Body>
+                                        <Card.Title>Fri 7 February, 2022 </Card.Title>
+                                        <Card.Text style={{}}>
+                                        <strong>5pm PST</strong>
+                                        </Card.Text>
+                                    </Card.Body>
+                                    </Card>
+                                </Col>
+
+
+                                <Col sm={9}>
+                                <br />
+                                <div className='container'>
+                                    <SectionHeading className="theme" title="Theme Topic"/>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                        printer took a galley of type and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+
+                                </Col>
+                            </Row>
                         </Tab>
                     </Tabs>
                 </div>

@@ -290,8 +290,28 @@
         margin-top: 5rem; 
         background: rgb(241, 240, 240);
     }
+
     .card {
         align-items: center;
+    }
+    .myClass{
+        background-image: url(../img/hourglass.png);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 5%;
+            
+    }
+
+    .myClass > ul > li> a {
+        background-color: rgb(145, 26, 26);
+    }
+    .card-info {
+        margin-right: 5px;
+    }
+
+    .class.active > a:hover {
+        background-color: red;
+        color: white;
     }
     /* --------- Stay Updated Page --------- */
     
