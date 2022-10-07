@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/img/logo.png'
 import LoginButton from './LoginButton'
 
-import {Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 function Header() {
     return (
