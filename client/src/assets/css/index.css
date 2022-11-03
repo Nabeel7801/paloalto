@@ -172,6 +172,9 @@
         line-height: 33px;
         margin-bottom: 5rem;
     }
+    .card-link {
+        text-decoration: none;
+    }
     /* --------- Introduction Component --------- */
     
     .introductionArea {
