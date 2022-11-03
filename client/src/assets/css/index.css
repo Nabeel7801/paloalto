@@ -370,6 +370,8 @@
     .customTable td {
         border: none;
     }
+
+
     /* ------- Responsiveness ------- */
     
     @media (max-width: 576px) {

@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import SectionHeading from '../components/SectionHeading';
 import IntroductionBox from '../components/IntroductionBox'
 import FAQBox from '../components/FAQBox'
+import About from '../components/About'
 
 import Footer from '../components/Footer';
 
@@ -32,6 +33,8 @@ function Home() {
 
                     </div>
                 </div>
+
+                <About/>
 
                 <div className="flex-box-section">
                         
