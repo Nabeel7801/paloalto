@@ -95,6 +95,7 @@
     .sectionHeading .topline {
         position: relative;
         padding: 10px 0 10px 0;
+        margin-left: 370px;
     }
     
     .sectionHeading .topline:before {

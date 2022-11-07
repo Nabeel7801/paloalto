@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header';
 
-import Button from '../components/Button';
+
 import SectionHeading from '../components/SectionHeading';
 import IntroductionBox from '../components/IntroductionBox'
 import FAQBox from '../components/FAQBox'

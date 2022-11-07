@@ -1,5 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import banner from '../assets/img/banner.jpg'
+import banner from '../assets/img/banner.jpg';
+import Button from '../components/Button';
+import SectionHeading from '../components/SectionHeading';
 
 function IndividualIntervalsExample() {
   return (
@@ -11,8 +13,17 @@ function IndividualIntervalsExample() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <div className="">
+            <SectionHeading title="Ignite '22" style={{color: "#fff"}}/>
+            <div className="title">Save the Date</div>
+            <div className="subtext">
+              Get ready for the world’s premier cybersecurity event. 
+              <br /><strong>December 12–15, 2022</strong>
+            </div>
+
+            <Button text="Get Updates" href="/contact"/>
+
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
