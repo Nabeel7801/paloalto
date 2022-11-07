@@ -142,7 +142,7 @@
     /* --------- Banner Component --------- */
     
     .bannerArea {
-        background-image: url('../img/banner.jpg');
+        
         height: 610px;
         background-position: center;
         background-repeat: no-repeat;

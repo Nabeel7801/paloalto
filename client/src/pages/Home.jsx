@@ -6,6 +6,7 @@ import SectionHeading from '../components/SectionHeading';
 import IntroductionBox from '../components/IntroductionBox'
 import FAQBox from '../components/FAQBox'
 import About from '../components/About'
+import Carousel from '../components/Carousel'
 
 import Footer from '../components/Footer';
 
@@ -19,17 +20,7 @@ function Home() {
                 <div className="bannerArea">
                     <div className="flex-box-section">
 
-                        <div className="bannerText col-md-12 col-lg-9 col-xl-7">
-                            <SectionHeading title="Ignite '22" style={{color: "#fff"}}/>
-                            <div className="title">Save the Date</div>
-                            <div className="subtext">
-                                Get ready for the world’s premier cybersecurity event. 
-                                <br /><strong>December 12–15, 2022</strong>
-                            </div>
-                            
-                            <Button text="Get Updates" href="/contact"/>
-                            
-                        </div>
+                        <Carousel/>
 
                     </div>
                 </div>
